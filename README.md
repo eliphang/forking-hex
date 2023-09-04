@@ -19,12 +19,12 @@ There are no draws in Hex. This is also true for Forking Hex. A player who makes
 Anyone can create a game, specifying
 
 * the size of the board. John Nash said 14x14 is the optimal board size, but any square size is possible. The length and complexity of the game depends on the size.
-* time per move for White (in blockchain blocks). This is how long a position stays *open* when it's White's turn, meaning how long players can make moves on that position, including forks.
-* time per move for Black. This must be more than the time for White. Hex is ultra-weakly solved. This means we know that the first mover will always win with perfect play, but we don't know what the perfect moves are. To balance this, we give the second mover more time per move.
+* time per move for Red (in blockchain blocks). This is how long a position stays *open* when it's Red's turn, meaning how long players can make moves on that position, including forks.
+* time per move for Blue. This must be more than the time for Red. Hex is ultra-weakly solved. This means we know that the first mover will always win with perfect play, but we don't know what the perfect moves are. To balance this, we give the second mover more time per move.
 * cost per move. Each move requires a deposit of crypto. Almost all deposits will be returned. Only a losing move loses its deposit, to be distributed to players on the other team.
 
 ### Beginning a game
-The game begins after White makes a move and Black responds. The position after White's first move can't be forked, meaning Black's first move will be the only response. The timer starts after Black's first move. The second position stays *open* for the number of blocks specified in "time per move for White." Anyone can make a move for white for this position.
+The game begins after Red makes a move and Blue responds. The position after Red's first move can't be forked, meaning Blue's first move will be the only response. The timer starts after Blue's first move. The second position stays *open* for the number of blocks specified in "time per move for Red." Anyone can make a move for Red for this position.
 
 ### Moving
 Anyone can submit a move to any open position. The move must place a piece of the color whose turn it is on an empty hex. Moving requires a deposit equal to the "cost per move" setting. Move deposits are returned unless the move is a losing move.
@@ -42,7 +42,7 @@ After a game has ended, players can reclaim their move deposits minus penalties 
 #### Penalties
 Each losing move forfeits its deposit as a penalty. A small percentage of each penalty goes to the developer fund and the rest is distributed as a reward.
 #### Rewards
-Each losing move is traced back from the losing position to the starting two moves, only considering moves from the opposite color to the losing move. A player receives a portion of the reward equal to the number of moves they made in this trace divided by the total number of moves in the trace. For example, if the losing move was a Black move, and there were 40 White moves before it, and a player made 5 of those moves, they would receive 1/8 of the reward.
+Each losing move is traced back from the losing position to the starting two moves, only considering moves from the opposite color to the losing move. A player receives a portion of the reward equal to the number of moves they made in this trace divided by the total number of moves in the trace. For example, if the losing move was a Blue move, and there were 40 Red moves before it, and a player made 5 of those moves, they would receive 1/8 of the reward.
 
 ## Architectural considerations
 ### Submitting a proof of a winning position
