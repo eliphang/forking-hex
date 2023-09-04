@@ -38,9 +38,9 @@ A losing move is a move that creates a losing position.
 ### Rewards and penalties
 After a game has ended, players can reclaim their move deposits minus penalties and plus rewards.
 #### Penalties
-Each losing move forfeits its deposit as penalty. A small percentage of each penalty goes to the developer fund and the rest is distributed as a reward.
+Each losing move forfeits its deposit as a penalty. A small percentage of each penalty goes to the developer fund and the rest is distributed as a reward.
 #### Rewards
-Each losing move is traced back from the losing position to the starting two moves, only considering moves from the opposite color to the losing move. A player receives a portion of the reward equal to the number of moves they made in this trace divided by the total number of moves in the trace. For example, if the losing move was a Black move, and there were 40 white moves before it, and a player made 5 of those moves, they would receive 1/8 of the reward.
+Each losing move is traced back from the losing position to the starting two moves, only considering moves from the opposite color to the losing move. A player receives a portion of the reward equal to the number of moves they made in this trace divided by the total number of moves in the trace. For example, if the losing move was a Black move, and there were 40 White moves before it, and a player made 5 of those moves, they would receive 1/8 of the reward.
 
 ## Architectural considerations
 ### Submitting a proof of a winning position
@@ -48,4 +48,4 @@ The smart contract doesn't need to check for the winning condition after each mo
 
 If a player plays a losing move that results in a win on the next turn by the other team, a player from that team should make a winning move by submitting an array of all the hexes connecting one side of the board to the other. The smart contract will check that these hexes connect to each other in order, span the board, and contain the correct color. If the checks pass, the position will be marked as winning, and no moves will be allowed to be played on it.
 ### Checking for rewards
-If the gas cost of checking for rewards is high, then there should be a read-only function that calculates the rewards for a player for free. There should also be a function that returns a players move deposits without check for rewards. This way a player can choose whether to pay the added gas costs of claiming their rewards or just claim the deposits. After all players in a game have claimed their deposits, any unclaimed rewards go to the developer fund .
+If the gas cost of checking for rewards is high, then there should be a read-only function that calculates the rewards for a player for free. There should also be a function that returns a player's move deposits without a check for rewards. This way a player can choose whether to pay the added gas of claiming their rewards or just claim the deposits. After all players in a game have claimed their deposits, any unclaimed rewards go to the developer fund .
