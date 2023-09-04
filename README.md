@@ -25,7 +25,7 @@ Anyone can create a game, specifying
 The game begins after White makes a move and Black responds. The position after White's first move can't be forked, meaning Black's first move will be the only response. The timer starts after Black's first move. The second position stays *open* for the number of blocks specified in "time per move for White." Anyone can make a move for white for this position.
 
 ### Moving
-Anyone can submit a move to any open position. The move must place a piece of the color whose turn it is next to a piece of the same color. Moving requires a deposit equal to the "cost per move" setting. Move deposits are returned unless the move is a losing move.
+Anyone can submit a move to any open position. The move must place a piece of the color whose turn it is on an empty hex. Moving requires a deposit equal to the "cost per move" setting. Move deposits are returned unless the move is a losing move.
 
 ### End
 The game ends when the timers have expired for all positions.
