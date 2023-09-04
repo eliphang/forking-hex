@@ -18,7 +18,7 @@ Anyone can create a game, specifying
 
 * the size of the board. John Nash said 14x14 is the optimal board size, but any square size is possible. The length and complexity of the game depends on the size.
 * time per move for White (in blockchain blocks). This is how long a position stays *open* when it's White's turn, meaning how long players can make moves on that position, including forks.
-* time per move for Black. This must be more than the time for the first team. Hex is ultra-weakly solved. This means we know that the first mover will always win with perfect play, but we don't know what the perfect moves are. To balance this, we give the second mover (Black) more time per move.
+* time per move for Black. This must be more than the time for White. Hex is ultra-weakly solved. This means we know that the first mover will always win with perfect play, but we don't know what the perfect moves are. To balance this, we give the second mover (Black) more time per move.
 * cost per move. Each move requires a deposit of crypto. Almost all deposits will be returned. Only a losing move loses its deposit, to be distributed to players on the other team.
 
 ### Beginning a game
