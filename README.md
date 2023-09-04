@@ -31,7 +31,7 @@ Anyone can submit a move to any open position. The move must place a piece of th
 The game ends when the timers have expired for all positions.
 
 ### Losing positions and moves
-A losing position is one in which all positions directly after it are winning positions. A winning position has no positions after it. A winning position might satisfy the winning condition of Hex, connecting two sides of the board, or it might have closed without any moves played on it (because everyone playing considers it to be winning).
+A losing position is one in which all positions directly after it are winning positions. A winning position has no positions after it. A winning position might satisfy the winning condition of Hex, connecting two sides of the board, or it might have closed without any moves played on it (because every player considers it to be winning).
 
 A losing move is a move that creates a losing position.
 
