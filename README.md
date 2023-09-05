@@ -2,7 +2,7 @@
 Find a move that connects two sides of the board and win crypto.
 
 ## Background
-Forking Hex is based on the game [Hex](https://en.wikipedia.org/wiki/Hex_(board_game)), where Red used its pieces to try to connect the two red sides of the board, while blue tries to connect the two blue sides.
+Forking Hex is based on the game [Hex](https://en.wikipedia.org/wiki/Hex_(board_game)), where Red uses its pieces to try to connect the two red sides of the board, while blue tries to connect the two blue sides.
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/e/e9/Hex_board_11x11.svg)
 
