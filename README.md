@@ -2,9 +2,11 @@
 Find a move that connects two sides of the board and win crypto.
 
 ## Background
-Forking Hex is based on the game [Hex](https://en.wikipedia.org/wiki/Hex_(board_game)). The innovation of Forking Hex is the addition of *forking*.
+Forking Hex is based on the game [Hex](https://en.wikipedia.org/wiki/Hex_(board_game)), where Red used its pieces to try to connect the two red sides of the board, while blue tries to connect the two blue sides.
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/e/e9/Hex_board_11x11.svg)
+
+Forking Hex adds *forking*, or making multiple moves from previous positions to create multiple concurrent game boards.
 
 ## Forking
 Anyone (including new players who haven't previously made moves) can make a move on any *open* position. More than one move can be made on a position, creating forks.
