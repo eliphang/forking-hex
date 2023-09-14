@@ -28,6 +28,8 @@ Anyone can create a game, specifying
 ### Beginning a game
 The game begins after Red makes a move and Blue responds. The position after Red's first move can't be forked, meaning Blue's first move will be the only response. The timer starts after Blue's first move. The second position stays *open* for the number of blocks specified in "time per move for Red." Anyone can make a move for Red for this position.
 
+One reason the game begins this way, is so that potential participants can look at the first two moves and the time control settings and decide whether this is a fair arrangement they'd like to continue.
+
 ### Moving
 Anyone can submit a move to any open position. The move must place a piece of the color whose turn it is on an empty hex. Moving requires a deposit equal to the "cost per move" setting. Move deposits are returned unless the move is a losing move.
 
