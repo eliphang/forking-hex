@@ -30,6 +30,10 @@ The game begins after Red makes a move and Blue responds. The position after Red
 
 The game begins this way so anyone can look at the first moves and time control and decide whether this is a fair arrangement they'd like to continue.
 
+If the game is taking too long start (because Red made the starting move and time control too strong), Red can withdraw, get their deposit back, and create a more fair game.
+
+In the rare event Red creates a first move and time control so weak that the game ends on the first move, Blue's deposit for the first move will be returned and Red's deposit for the first move will go to the dev fund.
+
 ### Moving
 Anyone can submit a move to any open position. The move must place a piece of the color whose turn it is on an empty hex. Moving requires a deposit equal to the "cost per move" setting. Move deposits are returned unless the move is a losing move.
 
@@ -49,9 +53,6 @@ Each losing move forfeits its deposit as a penalty. A small percentage of each p
 Each losing move is traced back from the losing position to the starting two moves, only considering moves from the opposite color to the losing move. A player receives a portion of the reward equal to the number of moves they made in this trace divided by the total number of moves in the trace. For example, if the losing move was a Blue move, and there were 40 Red moves before it, and a player made 5 of those moves, they would receive 1/8 of the reward.
 
 Any game of at least two moves will have a reward for at least one player.
-
-##### Losing first move
-In the rare event red creates a first move and time control so bad that the game ends on the first move, blue's deposit for the first move will be returned and red's deposit for the first move will go to the dev fund.
 
 ## Architectural considerations
 ### Submitting a proof of a winning position
