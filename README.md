@@ -51,7 +51,7 @@ Each losing move is traced back from the losing position to the starting two mov
 Any game of at least two moves will have a reward for at least one player.
 
 ##### Losing first move
-If red creates a first move and time control so bad that the game ends on the first move, blue's deposit for the first move will be returned and red's deposit for the first move will go to the dev fund.
+In the rare event red creates a first move and time control so bad that the game ends on the first move, blue's deposit for the first move will be returned and red's deposit for the first move will go to the dev fund.
 
 ## Architectural considerations
 ### Submitting a proof of a winning position
