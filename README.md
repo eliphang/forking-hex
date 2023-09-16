@@ -30,7 +30,7 @@ The game begins after Red makes a move and Blue responds. The position after Red
 
 The game begins this way so anyone can look at the first moves and time control and decide whether this is a fair arrangement they'd like to continue.
 
-If the game is taking too long start (because Red made the starting move and time control too strong), Red can withdraw, get their deposit back, and create a more fair game.
+If the game takes too long start (because Red made the starting move and time control too strong), Red can withdraw, get their deposit back, and create a more fair game.
 
 In the rare event Red creates a first move and time control so weak that the game ends on the first move, Blue's deposit for the first move will be returned and Red's deposit for the first move will go to the dev fund.
 
