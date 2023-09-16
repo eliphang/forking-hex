@@ -48,6 +48,11 @@ Each losing move forfeits its deposit as a penalty. A small percentage of each p
 #### Rewards
 Each losing move is traced back from the losing position to the starting two moves, only considering moves from the opposite color to the losing move. A player receives a portion of the reward equal to the number of moves they made in this trace divided by the total number of moves in the trace. For example, if the losing move was a Blue move, and there were 40 Red moves before it, and a player made 5 of those moves, they would receive 1/8 of the reward.
 
+Any game of at least two moves will have a reward for at least one player.
+
+##### Losing first move
+If red creates a first move and time control so bad that the game ends on the first move, blue's deposit for the first move will be returned and red's deposit for the first move will go to the dev fund.
+
 ## Architectural considerations
 ### Submitting a proof of a winning position
 The smart contract doesn't need to check for the winning condition after each move, and in most games, a winning position will never actually be reached, because players will see in advance when positions are losing.
